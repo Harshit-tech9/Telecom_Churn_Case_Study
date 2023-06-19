@@ -9,7 +9,7 @@ In telecom industry customers are can choose from multiple service provider and 
 - [Methodology](#methodology)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Technology used](#Technology used)
+- [Technology used](#Technology used) 
 - [Contact](#Contact)
 
 
