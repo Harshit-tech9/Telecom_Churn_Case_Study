@@ -9,9 +9,9 @@ In telecom industry customers are can choose from multiple service provider and 
 - [Methodology](#methodology)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Technology used](#Technology used)
+- [Contact](#Contact)
+
 
 ## Business Problem
 
@@ -19,35 +19,34 @@ There are multiple telecom companies and customers have a multiple choice availa
 
 ## Data
 
-Explain the data sources used in your project. Provide details about the data, such as its origin, format, and any preprocessing or cleaning steps applied. 
-The data available is in CSV format. 
+The data set include various data of customers like Their subscription period, type of payment, age, payment method, gender, internet service, monthly charges etc. which explains the behaviours of customers. There was no outlier present in our dataset. There were certain features which were map, certain fatures were one hot encoded and few levels of certain features were deleted for reducing the correlations between the features.
 
 ## Methodology
 
-Describe the methodology or approach used to solve the business problem. Explain any algorithms, models, or techniques utilized and their relevance to the problem at hand.
+This is a binary classification problem. Here Logistic regression has been used for classifying the churn and non-churn customers. standarad scaler was used for scaling the numeric columns. Auto feature selection technique Recursive Feature Elimination is used to identify the top 15 features and on that top 15 features we applied manual feature selection technique Variance Inflation Factor (VIF) and p-values to identify the best 5 features for our model. confusion matrix was used for identifying the number of rows correctly classify and the AUC-ROC curve was used for choosing the optimal threshold values.
 
 ## Results
 
-Present and discuss the results obtained from your project. Highlight any key findings, insights, or visualizations that are relevant to the business problem. Include metrics, charts, or graphs to support your findings.
+The AUC-ROC curve area was 0.76. The best features after feature selection were Contract_two_years, tenure, contract_one_year, internet_fiber_service optic, and internetService_No. 
 
 ## Conclusion
 
-Summarize the main outcomes of your project. Discuss the implications of your results and how they address the initial business problem or objective. Offer insights or recommendations for further improvements or actions based on your findings.
+Here, we had a good AUC-ROC curve area of 0.76. But we need to use a better algorithm for classification purposes. The telecom company should focus on more on customers with a contract of one year. Customers have fiber optic service and with shorter tenure.  
 
-## Usage
+## Technology used 
 
-Provide instructions or guidelines on how to use your project. Include any prerequisites, installation steps, or dependencies required. Explain the basic usage or functionalities of your project and provide examples if applicable.
+- pandas - version 1.5.3
+- numpy - version 1.22.4
+- seaborn - version 0.12.2
+- matplotlib - version 3.7.1
+- sci-kit learn - version 1.2.2
+- statsmodel - version 0.13.5
 
-## Contributing
+## Contact
 
-If you would like to contribute to this project, please follow the guidelines below:
+Created by Harshit-tech9 - feel free to contact me at harshitpanchalcie16@gmail.com
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and push the branch to your forked repository.
-4. Submit a pull request to the original repository, detailing the changes you made.
 
-## License
 
-Specify the license under which your project is distributed. Include any relevant terms or conditions for usage or modification of your project.
+
 
