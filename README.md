@@ -9,7 +9,7 @@ In telecom industry customers are can choose from multiple service provider and 
 - [Methodology](#methodology)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Technology used](#Technology used) 
+- [Technologies Used](#Technologies-Used)
 - [Contact](#Contact)
 
 
@@ -33,7 +33,7 @@ The AUC-ROC curve area was 0.76. The best features after feature selection were 
 
 Here, we had a good AUC-ROC curve area of 0.76. But we need to use a better algorithm for classification purposes. The telecom company should focus on more on customers with a contract of one year. Customers have fiber optic service and with shorter tenure.  
 
-## Technology used 
+## Technologies-Used 
 
 - pandas - version 1.5.3
 - numpy - version 1.22.4
